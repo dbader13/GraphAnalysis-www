@@ -1,0 +1,294 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><!-- InstanceBegin template="/Templates/base.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta name="author" content="David A. Bader" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="description" content="GraphAnalysis.org: High performance computing for solving large-scale graph problems" />
+<meta name="keywords" content="Graph Analysis, GraphAnalysis, HPC Graphs, parallel graph problems" />
+<link rel="stylesheet" type="text/css" href="style.css" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>GraphAnalysis.org: SIAM AN09 Minisymposium on High Performance Computing on Massive Real-World Graphs</title>
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" -->
+<style type="text/css">
+<!--
+.style3 {color: #0000FF}
+.style5 {color: #FF0000; font-family: Verdana, Arial, Helvetica, sans-serif; font-weight: bold; font-size: large; }
+.style6 {font-size: medium}
+.style7 {color: #FF0000; font-family: Verdana, Arial, Helvetica, sans-serif; font-weight: bold; font-size: medium; }
+#container #content dl dd em {
+	color: #00F;
+}
+-->
+</style>
+<!-- InstanceEndEditable -->
+</head>
+
+<body>
+<div id="container">
+	
+<div id="top">
+<h1><center>HPC Graph Analysis</center></h1>
+</div>
+
+<div id="leftnav">
+<ul>
+<li><a href="index.html">Home</a></li>  
+<li><a href="news.html">News</a></li>
+<li><a href="benchmark/index.html">Benchmark</a></li>
+<li><a href="benchmark/results.html">Results</a></li>
+<li><a href="https://hpc.pnl.gov/grapl/">Workshop 2022</a></li>
+<li><a href="https://hpc.pnl.gov/grapl/previous/2021/index.html">Workshop 2021</a></li>
+<li><a href="https://hpc.pnl.gov/grapl/previous/2020/index.html">Workshop 2020</a></li>
+<li><a href="https://hpc.pnl.gov/grapl/previous/2019/index.html">Workshop 2019</a></li>
+<li><a href="workshop2018.html">Workshop 2018</a></li>
+<li><a href="workshop-CSE17.html">Workshop @CSE17</a></li>
+<li><a href="workshop2017.html">Workshop 2017</a></li>
+<li><a href="workshop2016.html">Workshop 2016</a></li>
+<li><a href="workshop2015.html">Workshop 2015</a></li>
+<li><a href="workshop2014.html">Workshop 2014</a></li>
+<li><a href="workshop2013.html">Workshop 2013</a></li>
+<li><a href="workshop2012-SC12.html">Workshop @SC12</a></li>
+<li><a href="workshop2012.html">Workshop 2012</a></li>
+<li><a href="workshop2010.html">Workshop 2010</a></li>
+<li><a href="workshop2009.html">Workshop 2009</a></li>
+<li><a href="workshop2008.html">Workshop 2008</a></li>
+<li><a href="publications.html">Publications</a></li>
+<li><a href="people.html">People</a></li>
+<li><a href="links.html">Links</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</div>
+<!-- InstanceBeginEditable name="EditRegion3" -->
+<div id="content">
+  <h3>SIAM AN09 Minisymposium on High Performance Computing on Massive Real-World Graphs <br />
+  </h3>
+  
+    <h4 align="center">
+      Colorado Convention Center<br />
+      Denver, CO<br /> 
+      <br />
+    6-10 July 2009<br />
+    </h4>
+    <h3>Scope and Goals:</h3>
+    <p>Graph theoretic abstractions are extensively used to analyze massive temporal streaming data from socio-economic interactions, social networking sites, communication networks, scientific computing, and applications in national security.  Yet these problems pose serious challenges for parallel machines due to non-contiguous, concurrent accesses to global data structures with low degrees of locality. Few parallel graph algorithms outperform their best sequential implementation due to long memory latencies and high synchronization costs. In this minisymposium, we consider novel research on graph problems for real-world applications including the representation of these problems in the language of linear algebra.</p>
+    <h3>Location:</h3>
+    <p><a href="http://www.siam.org/meetings/an09/"><img src="AN09-B.gif" alt="AN09 logo" width="186" height="90" hspace="10" vspace="0" border="0" align="left" longdesc="http://www.siam.org/meetings/an09/" /></a>This workshop is co-located with <a href="http://www.siam.org/meetings/an09/">SIAM AN09</a>, held 6-10 July 2009, at the Sheraton Denver Downtown Hotel<br />
+in Denver, CO. Registration information for AN09 can be found at <a href="http://www.siam.org/meetings/an09/reginfo.php">here</a>.</p>
+<br />
+	    <h3 align="left"><br />
+        Program: </h3>
+    <span class="style7">Wednesday, July 8</span>
+        <h4>10:30 AM - 12:30 PM<br />
+        <em>Room: 710</em>    </h4>
+    <dl>
+      <dt><strong>10:30-10:55 <a href="SIAM-AN09/01_Bader.pdf">Exascale Analytics of Massive Social Networks</a></strong></dt>
+      <dd><em>David A. Bader</em>, Georgia Institute of Technology </dd>
+      <dd>Combinatorial techniques are proving useful in solving real-world
+challenges in traditional and emerging computational sciences
+such as chemistry, biology, and medicine, as well as applications
+in national security.  Emerging real-world applications can be
+modeled using algorithms that process massive spatio-temporal
+complex networks, such as power grid stability, inference of gene
+function in protein interaction networks, and cancer research, as
+well as homeland security and national defense.  In this talk we
+focus on the analysis of massive social networks using graph
+theoretic techniques.
+Our experimental studies use real-world graph instances with
+billions of elements and demonstrate superior performance on
+highly parallel 20 systems such as the Cray XMT multithreaded
+architecture and the Sun's Niagara 2 Maramba system. We will also
+describe SNAP (Small- world Network Analysis and Partitioning),
+an open-source graph framework that we have developed for the
+exploration of massive complex networks and present new ideas on
+the exploration of the dynamic structure of massive
+spatio-temporal networks with billions of entities, such as
+understanding the genesis and dissipation of communities,
+allegiance switching, and source detection.</dd>
+      <dt>&nbsp;</dt>
+      <dt>&nbsp;</dt>
+      <dt><strong>11:00-11:25 <a href="SIAM-AN09/02_Kepner.pdf">Graph Detection Theory for Power Law Graphs</a></strong></dt>
+      <dd><em>Jeremy Kepner</em>, Massachusetts Institute of Technology </dd>
+      <dd><!-- Detecting items of interest from the patterns of interaction in
+  large graphs is the goal many graph analysis techniques.  The
+  basis of detection theory is computing the probability of a
+  "signature" with respect to a model of the "background" data.
+  Hidden Markov Models represent one possible signature model for
+  patterns of interacation in a graph.  Likewise, Kronecker
+  graphs are one possible background model for graphs.  Combining
+  these models results in a filter that can be used compute the
+  probability that a given graph contains a particular signature. --></dd>
+      <dt><strong>11:30-11:55 <a href="SIAM-AN09/03_Buluc.pdf">Parallel Combinatorial BLAS and Applications in Graph   Computation</a></strong></dt>
+      <dd><em> Aydin Buluc</em> and John R.   Gilbert, University of California, Santa Barbara </dd>
+      <dd>Graph computations are difficult to parallelize using traditional
+approaches due to their irregular nature and low operational
+intensity. Many graph computations, however, contain sufficient
+coarse grained parallelism that can be uncovered by using the
+right set of abstractions. We have been developing a parallel
+combinatorial BLAS that consists of a small but powerful set of
+linear algebra primitives. We will explain our software design
+philosophy and report on the initial results with our reference
+implementation.
+</dd>
+      <dt><strong> 12:00-12:25 <a href="SIAM-AN09/04_Madduri.pdf">Scaling up Graph   Algorithms on Emerging Multicore Systems</a></strong></dt>
+      <dd><em>Kamesh Madduri</em>, Lawrence Berkeley National Laboratory </dd>
+      <dd>Graph algorithms on sparse random networks typically suffer a
+3-5X drop in performance when their memory footprint gets larger
+than the last-level cache on current systems. We attempt to
+ameliorate this drop for breadth-first search, and present
+several strategies to limit the number of non-contiguous memory
+references incurred in graph traversal. We extend these ideas to
+improve parallel scaling on cache-based multicore systems, by
+utilizing the shared and private caches more effectively, and by
+reducing synchronization overhead. We observe that the strategies
+discussed for breadth-first search are applicable to a large
+class of graph algorithms, and present another case study of a
+cache-aware parallel betweenness centrality algorithm for
+small-world networks.</dd>
+    </dl>
+    <span class="style7">Wednesday, July 8</span><br />
+    <h4>4:00 PM - 6:00 PM<br />
+      <em>Room: 710</em>    </h4>
+    <dl>
+      <dt><strong>4:00-4:25 <a href="SIAM-AN09/05_Sears.pdf">Parallel Implementation of Tensor Decompositions for Large Data   Analysis</a></strong></dt>
+      <dd><em>Mark P. Sears</em>, Brett W. Bader, and Tammy Kolda, Sandia National   Laboratories </dd>
+      <dd>Large data sets can often be mapped into multidimensional arrays,
+which we call tensors; the resulting tensor is usually extremely
+sparse. Similar to the SVD decomposition of a matrix there are a
+number of proposed tensor representations in terms of
+factors. This talk will describe serial and parallel
+implementations of several algorithms for tensor analysis, in
+particular algorithms which compute PARAFAC and Tucker
+representations of tensors. We will discuss previous and
+potential applications of these representations.</dd>
+      <dt><strong> 4:30-4:55 <a href="SIAM-AN09/06_Mahoney.pdf">Novel Graph Algorithms   for Structure Extraction from Informatics Networks</a></strong></dt>
+      <dd><em>Michael Mahoney</em>, Stanford University </dd>
+      <dd>Large informatics graphs such as large social and information
+networks that are increasingly common in Internet and
+high-performance computing applications have surprising complex
+and subtle structural and dynamic properties.  For instance,
+their size alone, which can be in the millions or billions or
+more of nodes, immediately renders many traditional algorithmic
+tools unusable.  In addition, their extreme sparsity and
+adversarial noise properties render many existing statistical
+tools inappropriate.  Finally, due to their heavy-tailed
+properties, these networks are not meaningfully low-dimensional
+nor are they meaningfully high-dimensional, and thus methods that
+explicitly or implicitly rely on either of those common
+assumptions have severe limitations.  I will describe
+recently-developed algorithms that begin to deal with some of
+these problems and that allow the analyst to probe in very fine
+ways nontrivial structural properties of extremely large
+informatics networks.  Examples of these algorithms include
+generalizations of spectral graph partitioning to find good cuts
+that are near a specified node, efficient methods to compute
+graph resistances that can be used to identify disproportionately
+important or influential nodes, graph partitioning algorithms
+that interpolate between spectral and flow-based algorithms, and
+heuristics to characterize the large-scale clustering structure
+of large networks.</dd>
+      <dt><strong> 5:00-5:25 <a href="SIAM-AN09/07_Chavarria.pdf">Scalable &amp; Efficient   Parallelization of Graph Methods for Boolean Satisfiability and Power Grid   Analysis on the Cray XMT</a></strong></dt>
+      <dd><em>Daniel Chavarria</em>, Pacific Northwest National Laboratory </dd>
+      <dd>Graph-based algorithms have a broad applicability to many
+different areas of science and technology.  Unfortunately,
+executing them efficiently for large-scale graphs requires a
+significant time and resource investment on traditional HPC
+systems.  The Cray XMT multithreaded architecture provides
+specialized hardware designed for the efficient parallel
+execution of highly irregular codes, such as those derived from
+graph algorithms.  This presentation will discuss our experiences
+in implementing two graph-based algorithms on the Cray XMT
+system: a Boolean satisfiability solver based on parallel Survey
+Propagation and an exact, edge-based, weighted Betweenness
+Centrality calculation applied to power grid analysis.</dd>
+      <dt><strong> 5:30-5:55 Open Discussion / Challenge Problems</strong></dt>
+    </dl>
+    <span class="style7">Thursday, July 9</span>
+    <h4>10:30 AM - 12:30 PM<br />
+      <em>Room: 710</em> </h4>
+    <dl>
+      <dt><strong>10:30-10:55 <a href="SIAM-AN09/08_Bhowmick.pdf">Detecting Community Structure in Dynamic   Networks</a></strong></dt>
+      <dd><em>Sanjukta Bhowmick</em>, Shweta Bansal, Kelly Fermoyle, and Padma   Raghavan, Pennsylvania State University </dd>
+      <dd>Community structure detection in networks has important
+applications in understanding social structures, spread of
+epidemics, etc. However most algorithms for detecting
+communities (defined as tightly connected group of nodes) are
+applicable only to a static network with fixed nodes and edges.
+In reality, social networks are dynamic and the connections
+change with time.  In this talk, we present an algorithm that can
+dynamically detect the change in communities as the network
+evolves over time steps.</dd>
+      <dt><strong>11:00-11:25 <a href="SIAM-AN09/09_Vullikanti.pdf">Structure of Large Scale Social Contact Graphs and its   Effect on Epidemics</a></strong></dt>
+      <dd><em>Anil Vullikanti</em>, Virginia Polytechnic Institute &amp; State   University </dd>
+      <dd>In recent years, there has been a lot of interest in studying the
+spread of epidemics on social contact graphs. We discuss
+important structural properties of a class of large scale
+synthetic social contact graphs.  We discuss what effect the
+underlying graph structure has on the disease dynamics, and how
+these structural properties can be used in designing effective
+interventions for epidemics (e.g., whom to vaccinate), which is
+an important public health issue.</dd>
+      <dt><strong>11:30-11:55 High Performance Computing for Large Graph   Problems</strong></dt>
+      <dd><em>Bruce Hendrickson</em> and Jonathan Berry, Sandia National Laboratories </dd>
+      <dd>Graph abstractions have long been central to sparse matrices,
+parallel computing, chemistry, logistics and many other areas.
+But recent years have witnessed a further broadening of graph
+models to represent entities and relationships in ecology, social
+science, text analysis and other fields.  There is a growing need
+for high performance graph algorithms to address problems in
+which the data is very large and/or timely response is important.
+For complex graphs, algorithms often exhibit very poor locality,
+and so cache-based architectures, and message-passing programming
+models deliver disappointing performance.  In this talk, I will
+discuss our exploration of non-traditional architectures and
+programming models for graph algorithms, placing this work in the
+larger context of ongoing changes within the high performance
+computing universe.</dd>
+      <dt><strong>12:00-12:25 Anatomy of a Distributed Graph</strong></dt>
+      <dd><em>Andrew Lumsdaine</em>, Douglas Gregor, and Nick Edmonds, Indiana   University</dd>
+      <dd>For the large-scale matrix and vector data structures used in
+scientific computing the data distribution process has become
+relatively well understood.  However, the increasing prominence
+of large-scale graph-based problems has magnified the importance
+of effective computation with distributed graph structures.
+Based on our experience with the Parallel Boost Graph Library, we
+present an overview of the unique characteristics of distributed
+graph data structures and the impact of these characteristics on
+application development and performance.
+<br />
+    </dd>
+    </dl>
+<h3>Workshop Co-Chairs:</h3>
+    <ul>
+     <li><strong><a href="http://www.cc.gatech.edu/~bader">David A. Bader</a></strong>,        <em>Georgia Institute of Technology</em></li>
+     <li><strong><a href="http://www.mit.edu/~kepner">Jeremy   Kepner</a></strong>,        <em>Massachusetts Institute of Technology Lincoln Laboratory</em></li>
+     <li><strong><a href="http://www.cs.ucsb.edu/~gilbert/">John R.   Gilbert</a></strong>,        <em>University of California, Santa Barbara</em></li>
+     <li><strong><a href="http://www.cse.psu.edu/~bhowmick/">Sanjukta   Bhowmick</a></strong>,        <em>Pennsylvania State University</em></li>
+     <li><strong><a href="http://www.cse.psu.edu/~raghavan/">Padma   Raghavan</a></strong>,        <em>Pennsylvania State University</em><br />
+        <br />
+      </li>
+    </ul>
+
+  </div>
+<!-- InstanceEndEditable -->
+<div id="footer">
+<i> 
+<script language="JavaScript"> 
+<!---//hide script from old browsers 
+document.write( "Last updated: "+ document.lastModified ); 
+          //end hiding contents ---> 
+</script> 
+</i> 
+</div>
+</div>
+
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-1564202-1";
+urchinTracker();
+</script>
+</body>
+
+<!-- InstanceEnd -->

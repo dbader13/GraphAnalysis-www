@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><!-- InstanceBegin template="/Templates/base.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta name="author" content="David A. Bader" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="description" content="GraphAnalysis.org: High performance computing for solving large-scale graph problems" />
+<meta name="keywords" content="Graph Analysis, GraphAnalysis, HPC Graphs, parallel graph problems" />
+<link rel="stylesheet" type="text/css" href="../style.css" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>GraphAnalysis.org: High Performance Computing for solving large-scale graph problems</title>
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" -->
+<meta name="author" content="Kamesh Madduri" />
+
+<meta name="description" content="GraphAnalysis.org: High performance computing for solving large-scale graph problems" />
+<meta name="keywords" content="Graph Analysis, GraphAnalysis, HPC Graphs, parallel graph problems, benchmark, SSCA Graph, SSCA" />
+<link rel="stylesheet" type="text/css" href="../style.css" />
+<!-- InstanceEndEditable -->
+</head>
+
+<body>
+<div id="container">
+	
+<div id="top">
+<h1><center>HPC Graph Analysis</center></h1>
+</div>
+
+<div id="leftnav">
+<ul>
+<li><a href="../index.html">Home</a></li>  
+<li><a href="../news.html">News</a></li>
+<li><a href="index.html">Benchmark</a></li>
+<li><a href="results.html">Results</a></li>
+<li><a href="https://hpc.pnl.gov/grapl/">Workshop 2022</a></li>
+<li><a href="https://hpc.pnl.gov/grapl/previous/2021/index.html">Workshop 2021</a></li>
+<li><a href="https://hpc.pnl.gov/grapl/previous/2020/index.html">Workshop 2020</a></li>
+<li><a href="https://hpc.pnl.gov/grapl/previous/2019/index.html">Workshop 2019</a></li>
+<li><a href="../workshop2018.html">Workshop 2018</a></li>
+<li><a href="../workshop-CSE17.html">Workshop @CSE17</a></li>
+<li><a href="../workshop2017.html">Workshop 2017</a></li>
+<li><a href="../workshop2016.html">Workshop 2016</a></li>
+<li><a href="../workshop2015.html">Workshop 2015</a></li>
+<li><a href="../workshop2014.html">Workshop 2014</a></li>
+<li><a href="../workshop2013.html">Workshop 2013</a></li>
+<li><a href="../workshop2012-SC12.html">Workshop @SC12</a></li>
+<li><a href="../workshop2012.html">Workshop 2012</a></li>
+<li><a href="../workshop2010.html">Workshop 2010</a></li>
+<li><a href="../workshop2009.html">Workshop 2009</a></li>
+<li><a href="../workshop2008.html">Workshop 2008</a></li>
+<li><a href="../publications.html">Publications</a></li>
+<li><a href="../people.html">People</a></li>
+<li><a href="../links.html">Links</a></li>
+<li><a href="../contact.html">Contact</a></li>
+</ul>
+</div>
+<!-- InstanceBeginEditable name="EditRegion3" -->
+<div id="content">
+	
+<h3>Benchmark</h3>
+
+<h4>Overview</h4>
+<p>
+We present a graph theory benchmark representative of computational kernels in computational biology, complex network analysis, and national security. This benchmark is based on the HPCS Scalable Synthetic Compact Applications graph analysis (SSCA#2) benchmark. SSCA#2 is characterized by integer operations, a large memory footprint, and irregular memory access patterns. It has multiple kernels accessing a single data structure representing a weighted, directed multigraph. In addition to a kernel to construct the graph from the input tuple list, there are three additional computational kernels to operate on the graph.  Each of the kernels requires irregular access to the graph's data structure, and it is possible that no single data layout will be optimal for all four computational kernels.
+</p>
+
+<h4>References</h4>
+<ul>
+	<li><strong>HPC Scalable Graph Analysis Benchmark v1.0</strong> (<em>24 February 2009</em>)
+	  <ul>
+	    <li><strong>Specification</strong>: <a href="GraphAnalysisBenchmark-v1.0.pdf">pdf</a> <!-- <a href="GraphAnalysisBenchmark-v1.0.doc">doc</a> --></li>
+	    <li>Sequential Matlab code: <a href="gabSer-v1.0.zip">gabSer-v1.0.zip</a></li>
+	    </ul>
+	  </li>
+	<li><strong>SSCA#2 v2.2 Specification</strong> (<em>5 September 2007</em>): <a href="HPCS-SSCA2_Graph-Theory_v2.2.pdf">pdf</a> <a href="HPCS-SSCA2_Graph-Theory_v2.2.doc">doc</a>
+	  <ul>
+	    <li>Sequential and Parallel code: <a href="SSCA2-2.2.tar.gz">C and C/OpenMP</a></li>
+	    <!-- <li>Matlab code: <a href="ssca2-v2-Matlab-serial.tar.gz">Sequential</a> and <a href="ssca2-v2-Matlab-parallel.tar.gz">Parallel</a> versions</li> -->
+	    </ul>
+	  </li>
+	<li><strong>SSCA#2 v2.1 Specification</strong> (<em>1 November 2006</em>): <a href="HPCS-SSCA2_Graph-Theory_v2.1.pdf">pdf</a> <a href="HPCS-SSCA2_Graph-Theory_v2.1.doc">doc</a>
+	  <ul>
+	    <li>Sequential code: <a href="SSCA2v2-C.tar.gz">C</a></li>
+	    <li>Parallel code: <a href="SSCA2v2-C_OpenMP.tar.gz">C/OpenMP</a></li>
+	    <li>Matlab version: <a href="http://www.highproductivity.org/private/ssca2v2-061107.tar.gz">ssca2v2-061107.tar.gz</a> </li>
+	  </ul>
+	</li>
+	<li><strong>SSCA#2 v2.0 Specification</strong> (<em>16 August 2006</em>): <a href="HPCS-SSCA2_Graph-Theory_v2.0.pdf">pdf</a> <a href="HPCS-SSCA2_Graph-Theory_v2.0.doc">doc</a></li>
+	</ul>
+
+<h4>Related Publications</h4>
+<p>The written specification is the primary reference document for the current benchmark version (SSCA#2 v2.1).</p>
+<p>The following papers discuss algorithms and implementations of earlier versions:</p>
+<ul>
+<li>D.A. Bader and K. Madduri, "<a href="http://www-static.cc.gatech.edu/~bader/papers/SSCA2.html">Design and Implementation of the HPCS Graph Analysis Benchmark on Symmetric Multiprocessors</a>," <em>The 12th International Conference on High Performance Computing (HiPC 2005)</em>, D.A. Bader et al., (eds.), Springer-Verlag LNCS 3769, 465-476, Goa, India, December 2005.</li>
+<li>J.R. Gilbert and S. Reinhardt and V. Shah, "<a href="http://www.cs.ucsb.edu/~viral/PAPERS/para06/para06.pdf">High Performance Graph Algorithms from Parallel Sparse Matrices</a>," <em>Workshop on the State-of-the-art in Scientific and Parallel Computing (PARA 2006)</em>, Umea, Sweden, June 2006.</li>
+</ul>
+</div>
+
+<!-- InstanceEndEditable -->
+<div id="footer">
+<i> 
+<script language="JavaScript"> 
+<!---//hide script from old browsers 
+document.write( "Last updated: "+ document.lastModified ); 
+          //end hiding contents ---> 
+</script> 
+</i> 
+</div>
+</div>
+
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-1564202-1";
+urchinTracker();
+</script>
+</body>
+
+<!-- InstanceEnd -->
